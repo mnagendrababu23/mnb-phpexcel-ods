@@ -1,0 +1,13 @@
+# mnb/mnb-phpexcel-ods
+
+Native streaming ODS reader module for MNB PHPExcel.
+
+This package is generated from the MNB PHPExcel monorepo. Do not copy source files between modules manually.
+
+## Install
+
+```bash
+composer require mnb/mnb-phpexcel-ods
+```
+
+See the main project documentation for typed options, streaming reads, and compatibility notes.
