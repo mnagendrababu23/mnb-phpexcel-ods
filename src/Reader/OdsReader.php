@@ -8,8 +8,8 @@ use Mnb\PHPExcel\Reader\State\FormulaResult;
 use Mnb\PHPExcel\Support\ErrorCode;
 use Mnb\PHPExcel\Support\LocaleNormalizer;
 use Mnb\PHPExcel\Support\MnbExcelException;
-use XMLReader;
-use ZipArchive;
+use Mnb\PHPExcel\Support\Xml\XmlReader;
+use Mnb\PHPExcel\Support\Zip\ZipArchive;
 
 /** Forward-only OpenDocument Spreadsheet (.ods) reader. */
 final class OdsReader implements IterableReaderInterface
