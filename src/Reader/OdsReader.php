@@ -12,8 +12,13 @@ use Mnb\PHPExcel\Support\Xml\XmlReader;
 use Mnb\PHPExcel\Support\Zip\ZipArchive;
 
 /** Forward-only OpenDocument Spreadsheet (.ods) reader. */
-final class OdsReader implements IterableReaderInterface
+final class OdsReader implements IterableReaderInterface, FormatAwareReaderInterface, SheetNamesReaderInterface
 {
+    public function format(): string
+    {
+        return 'ods';
+    }
+
     /** @return list<list<mixed>> */
     public function readSheet(string $path, int|string $sheet = 1, array $options = []): array
     {
